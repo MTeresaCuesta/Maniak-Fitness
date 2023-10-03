@@ -1,0 +1,257 @@
+@import "variables";
+
+// Mixin para input y icono de búsqueda
+@mixin inputSearch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+
+  input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 27px;
+    font-size: 1rem;
+    padding-right: 40px;
+  }
+
+  .material-icons {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: gray;
+  }
+}
+
+// Estilos generales
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+}
+
+// Estilos de la barra de navegación
+header {
+  nav {
+    background-color: $color-background;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+  }
+
+  .d-flex {
+    display: flex;
+    gap: 2vw;
+    margin: 1vw;
+    padding: 1vw;
+    align-items: center;
+
+    .inputSearch {
+      @include inputSearch;
+    }
+  }
+
+  .iconDeCompraYUser {
+    display: flex;
+    gap: 1vw;
+    margin: 1vw;
+    padding: 1vw;
+    align-items: center;
+  }
+}
+
+// Estilos del contenido principal
+.img-cabecera {
+  height: 60vh;
+  width: 100%;
+  background-image: url("../images/imgCabecera.png");
+  background-size: cover;
+}
+
+// Estilos de las secciones
+section {
+  h3 {
+    font-family: $font-family;
+    font-size: $font-size-h3;
+    text-align: center;
+    margin-top: 4vh;
+  }
+
+  hr {
+    width: 19vw;
+    height: 2px;
+    margin: 15px auto 30px auto;
+  }
+
+  .encuadreSection2 {
+    display: flex;
+    gap: 1.1vw;
+    margin-bottom: 3vh;
+  }
+
+  .img30off {
+    display: flex;
+    gap: 30px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .imgpeq30off {
+    width: 36vh;
+  }
+
+  .twopeople {
+    max-width: 100%;
+    height: 62.7vh;
+    width: 59vw;
+  }
+}
+
+.logofooter {
+  margin-left: 10vw; /* Ajusta el margen izquierdo según sea necesario */
+}
+
+// Estilos del pie de página
+footer {
+  .footerLorem {
+    display: flex;
+    padding: 1rem;
+    background-color: rgba(232, 237, 241, 1);
+    justify-content: space-between;
+    height: 26vh;
+  }
+
+  .text-content {
+    display: flex;
+    gap: 30px;
+  }
+
+  h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2vh;
+  }
+
+  p {
+    font-family: $font-family;
+    font-size: 0.875rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+}
+
+.maniakfitness {
+  width: 15rem !important;
+}
+
+.logofooter {
+  margin-left: 80vw;
+  margin-top: 20%;
+}
+
+// MEDIA QUERY IPHONE 12 PRO
+@media (max-width: 500px) {
+  header nav {
+    height: 12vh;
+  }
+
+  .logo {
+    width: 24vw;
+    position: absolute;
+    left: 2vw;
+  }
+
+  .d-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+  }
+
+  input {
+    height: 4vh;
+    width: 95vw;
+    border-radius: 27px;
+    font-size: 1rem;
+    margin-top: 4vh;
+  }
+
+  .material-icons {
+    margin-top: 1.9vh;
+  }
+
+  .iconDeCompraYUser {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 74vw;
+    gap: 6vw !important;
+
+    .iconVistaMovil {
+      width: 6vw;
+      height: 3vh;
+    }
+  }
+
+  .img-cabecera {
+    height: 38vh;
+  }
+
+  h3 {
+    font-size: 1.5rem !important;
+    margin-top: 2vh !important;
+    margin-bottom: 2vh;
+  }
+
+  hr {
+    width: 69vw !important;
+    margin-bottom: 2vh !important;
+  }
+
+  .encuadreSection2 {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 0.1vw !important;
+  }
+
+  section .imgpeq30off {
+    width: 46vw;
+  }
+
+  .twopeople {
+    height: 41vh !important;
+    width: 113vw !important;
+    margin-bottom: 2.3vh;
+  }
+
+  .text-content {
+    padding: 3%;
+  }
+
+  h2 {
+    font-size: 1rem !important;
+    width: 50vw;
+  }
+}
+
+.maniakfitness {
+  width: 12rem;
+}
+
+.superponeLorem {
+  position: relative;
+  z-index: 1;
+}
+
+.logofooter {
+  position: absolute;
+  margin-top: 1vh;
+  right: 0;
+}
+
+

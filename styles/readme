@@ -1,0 +1,22 @@
+# MANIAK FITNESS
+
+Bienvenido al proyecto MANIAK FITNESS. Este repositorio contiene los archivos del sitio web de MANIAK FITNESS, incluyendo el código HTML maquetado y algunas capturas de pantalla de las vistas en PC y en el iPhone 12 Pro.
+
+## Responsively-Screenshots
+
+En la carpeta "capturas" encontrarás las capturas de pantalla del proyecto. Estas capturas representan el diseño del sitio en dos vistas:
+
+- **Vista en PC:** Captura realizada en un MacBook Pro con una resolución de 1440x900 utilizando la aplicación ResponsivelyApp.
+- **Vista en iPhone 12 Pro:** Captura realizada en un iPhone 12 Pro con medidas de 390x844.
+
+## Cómo Abrir el HTML
+
+Para ver el sitio web, simplemente sigue estos pasos:
+
+1. Descarga o clona este repositorio en tu ordenador.
+
+2. Abre tu navegador web preferido.
+
+3. Arrastra y suelta el archivo `index.html` que se encuentra en la carpeta del proyecto en la barra de direcciones del navegador.
+
+   Ejemplo de ruta de archivo en un Mac:
